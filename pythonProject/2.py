@@ -6,8 +6,8 @@ def draw_board():
         row = []
         for j in range(3):
             element = board[i*3+j]
-            if isinstance(element, int):  # Check if the element is still a number
-                row.append('-')  # Replace numbers with dash
+            if isinstance(element, int):
+                row.append('-')
             else:
                 row.append(element)  # 'X' or 'O' stays
         print(f"{i} {' '.join(row)}")
